@@ -58,7 +58,7 @@ main: barrier.await()   ← main SLEEPS here
 
 ← ALL 21 participants reached the barrier → everyone is released
 
-main wakes up → getResultado() → all values are real → correct average ✅
+main wakes up → getResultado() → all values are real → correct average 
 ```
 
 ---
@@ -178,7 +178,7 @@ public class Main {
 |---|---|---|
 | Main thread behavior | Continues immediately after `start()` | Sleeps at `barrier.await()` |
 | When average is calculated | Before threads finish | After last thread finishes |
-| Result | `0 ms` ❌ | Correct value ✅ |
+| Result | `0 ms`  | Correct value  |
 
 ---
 
